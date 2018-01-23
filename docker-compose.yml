@@ -6,7 +6,7 @@ services:
      volumes:
        - db_data:/var/lib/mysql
        - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-       - wp-content/:/var/www/html/wp-content
+       - ./wp-content/:/var/www/html/wp-content
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: somewordpress
