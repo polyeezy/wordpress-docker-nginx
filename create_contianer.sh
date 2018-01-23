@@ -1,0 +1,1 @@
+docker run -d --name blog --expose 80 --net nginx-proxy -e VIRTUAL_HOST=ziev.valerianpolizzi.fr wordpress
