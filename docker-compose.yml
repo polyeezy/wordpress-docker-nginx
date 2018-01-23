@@ -5,7 +5,7 @@ services:
      image: mysql:5.7
      volumes:
        - db_data:/var/lib/mysql
-       - ./nginx.conf:/etc/nginx/nginx.conf
+       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
        - ./wp-content:/usr/src/wordpress/wp-content
      restart: always
      environment:
